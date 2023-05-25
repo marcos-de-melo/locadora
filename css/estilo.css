@@ -1,0 +1,6 @@
+/* estilo no menu provisório*/
+
+li{
+    display: inline-block;
+    margin-right: 10px;
+}
