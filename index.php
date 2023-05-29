@@ -1,5 +1,8 @@
+<?php
+    include_once("./db/conexao.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -44,7 +47,7 @@
                 include("lista-clientes.php");
                 break;
             default:
-                include("home");
+                include("home.php");
         }
         ?>
         <!-- ----------------------------- -->
