@@ -1,6 +1,6 @@
 <?php
 
-const SERVIDOR = "root";
+const SERVIDOR = "localhost";
 const USUARIO = "root";
 const SENHA = "neon321";
 const BANCO = "dblocadora";
