@@ -49,6 +49,12 @@
             case "categorias":
                 include("lista-categorias.php");
                 break;
+            case "cad-categorias":
+                include("cad-categorias.php");
+                break;
+            case "inserir-categorias":
+                include("inserir-categorias.php");
+                break;
             case "clientes":
                 include("lista-clientes.php");
                 break;

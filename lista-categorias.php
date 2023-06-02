@@ -1,5 +1,7 @@
 <h2>Lista de Categorias</h2>
-
+<div>
+    <a href="index.php?menu=cad-categorias">Cadastrar nova Categoria</a>
+</div>
 
 <table border="1">
     <thead>
