@@ -1,5 +1,7 @@
 <h2>Lista de Vídeos</h2>
-
+<div>
+    <a href="index.php?menu=cad-videos">Cadastrar novo vídeo</a>
+</div>
 <table border="1">
     <thead>
         <tr>
