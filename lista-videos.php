@@ -10,6 +10,7 @@
             <th>Duração do Filme</th>
             <th>Valor da Locação</th>
             <th>Categoria</th>
+            <th>Editar</th>
         </tr>
     </thead>
     <tbody>
@@ -27,6 +28,7 @@
                 <td><?= $dados["duracaoFilme"] ?></td>
                 <td><?= $dados["valorLocacao"] ?></td>
                 <td><?= $dados["nomeCategoria"] ?></td>
+                <td><a href="index.php?menu=editar-videos&idFilme=<?=$dados["idFilme"]?>">Editar</a></td>
             </tr>
         <?php
         }
