@@ -18,11 +18,11 @@ $dados = mysqli_fetch_assoc($rs);
     </div>
     <div>
         <label for="duracaoFilme">Duração do Vídeo</label>
-        <input type="text" name="duracaoFilme" id="duracaoFilme" value="<?=$dados['duracaoFilme']?>" readonly required>
+        <input type="text" name="duracaoFilme" id="duracaoFilme" value="<?=$dados['duracaoFilme']?>"  required>
     </div>
     <div>
         <label for="valorLocacao">Valor da Locação</label>
-        <input type="text" name="valorLocacao" id="valorLocacao" value="<?=$dados['valorLocacao']?>" readonly required>
+        <input type="text" name="valorLocacao" id="valorLocacao" value="<?=$dados['valorLocacao']?>"  required>
     </div>
     <div>
         <label for="idCategoria">Categoria</label>
