@@ -2,6 +2,21 @@
 <div>
     <a href="index.php?menu=cad-videos">Cadastrar novo vídeo</a>
 </div>
+<div>
+<?php
+    //$txtPesquisa = (isset($_POST["txtPesquisa"]))?$_POST["txtPesquisa"]:"";
+    if (isset($_POST["txtPesquisa"])) {
+        $txtPesquisa = $_POST["txtPesquisa"];
+    } else {
+        $txtPesquisa = "";
+    }
+    ?>
+    <form action="" method="post">
+        <label for="txtPesquisa">Pesquisar</label>
+        <input type="search" name="txtPesquisa" id="txtPesquisa" value="<?=$txtPesquisa?>">
+        <button type="submit">Ok</button>
+    </form>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -15,11 +30,12 @@
         </tr>
     </thead>
     <tbody>
-        <?php
+    <?php
         $sql = "SELECT * FROM 
-        tbfilmes as f inner join tbcategorias as c 
-        on f.idCategoria = c.idCategoria 
-        order by tituloFilme asc";
+        tbfilmes as f inner join 
+        tbCategorias as c on f.idCategoria = c.idCategoria 
+        where tituloFilme like '%{$txtPesquisa}%' 
+         order by tituloFilme";
         $rs = mysqli_query($conexao, $sql);
         while ($dados = mysqli_fetch_assoc($rs)) {
         ?>
