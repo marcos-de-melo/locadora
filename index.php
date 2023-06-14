@@ -64,6 +64,15 @@
             case "inserir-categorias":
                 include("inserir-categorias.php");
                 break;
+            case "editar-categorias":
+                include("editar-categorias.php");
+                break;
+            case "atualizar-categorias":
+                include("atualizar-categorias.php");
+                break;
+            case "excluir-categorias":
+                include("excluir-categorias.php");
+                break;
             case "clientes":
                 include("lista-clientes.php");
                 break;
