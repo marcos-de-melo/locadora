@@ -2,7 +2,24 @@
 <div>
     <a href="index.php?menu=cad-categorias">Cadastrar nova Categoria</a>
 </div>
+<div>
+    <?php
+    //$txtPesquisa = (isset($_POST["txtPesquisa"]))?$_POST["txtPesquisa"]:"";
+    if (isset($_POST["txtPesquisa"])) {
+        $txtPesquisa = $_POST["txtPesquisa"];
+    } else {
+        $txtPesquisa = "";
+    }
+    ?>
 
+    <form action="" method="post">
+        <label for="txtPesquisa">Pesquisa</label>
+        <input type="search" name="txtPesquisa" id="txtPesquisa" value="<?=$txtPesquisa?>">
+        <button type="submit">
+            OK
+        </button>
+    </form>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -13,8 +30,9 @@
         </tr>
     </thead>
     <tbody>
-        <?php
-        $sql = "SELECT * FROM tbcategorias order by nomeCategoria asc";
+    <?php
+        $sql = "SELECT * FROM tbcategorias 
+        where nomeCategoria like '%{$txtPesquisa}%'";
         $rs = mysqli_query($conexao, $sql);
         while ($dados = mysqli_fetch_assoc($rs)) {
         ?>
