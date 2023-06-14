@@ -11,6 +11,7 @@
             <th>Valor da Locação</th>
             <th>Categoria</th>
             <th>Editar</th>
+            <th>Excluir</th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
                 <td><?= $dados["valorLocacao"] ?></td>
                 <td><?= $dados["nomeCategoria"] ?></td>
                 <td><a href="index.php?menu=editar-videos&idFilme=<?=$dados["idFilme"]?>">Editar</a></td>
+                <td><a href="index.php?menu=excluir-videos&idFilme=<?=$dados["idFilme"]?>">Excluir</a></td>
             </tr>
         <?php
         }
