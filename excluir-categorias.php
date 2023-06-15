@@ -1,4 +1,4 @@
-<h2>Excluir Vídeo</h2>
+<h2>Excluir Categorias</h2>
 <?php
 $idCategoria = $_GET["idCategoria"];
 $sql = "delete from tbcategorias where idCategoria = '{$idCategoria}'";

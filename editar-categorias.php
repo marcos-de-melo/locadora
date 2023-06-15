@@ -9,7 +9,7 @@ $dados = mysqli_fetch_assoc($rs);
 
 <form action="index.php?menu=atualizar-categorias" method="post">
     <div>
-        <label for="idCategoria">Nome da Categoria</label>
+        <label for="idCategoria">ID</label>
         <input type="text" name="idCategoria" id="idCategoria" value="<?=$dados["idCategoria"]?>" readonly>
     </div>
     <div>

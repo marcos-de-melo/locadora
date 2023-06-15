@@ -1,4 +1,4 @@
-<h2>Atualizar Video</h2>
+<h2>Atualizar Categoria</h2>
 <?php
 $idCategoria = $_POST["idCategoria"];
 $nomeCategoria = $_POST["nomeCategoria"];

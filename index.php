@@ -76,6 +76,24 @@
             case "clientes":
                 include("lista-clientes.php");
                 break;
+            case "cad-clientes":
+                include("cad-clientes.php");
+                break;
+            case "inserir-clientes":
+                include("inserir-clientes.php");
+                break;
+            case "editar-clientes":
+                include("editar-clientes.php");
+                break;
+            case "atualizar-clientes":
+                include("atualizar-clientes.php");
+                break;
+            case "atualizar-clientes":
+                include("atualizar-clientes.php");
+                break;
+            case "excluir-clientes":
+                include("excluir-clientes.php");
+                break;
             default:
                 include("home.php");
         }
