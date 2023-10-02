@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Inserir Vídeo</h2>
 
 <?php
@@ -27,3 +28,4 @@ $sql = "INSERT INTO tbfilmes (
         echo "<p>Erro ao inserir</p>";
     }
 ?>
+</div>

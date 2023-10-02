@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Excluir Vídeo</h2>
 <?php
 $idFilme = $_GET["idFilme"];
@@ -7,3 +8,4 @@ $rs = mysqli_query($conexao,$sql);
 echo "<p>Registro excluido com sucesso!</p>";
 
 ?>
+</div>

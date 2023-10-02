@@ -13,10 +13,6 @@ valorLocacao='{$valorLocacao}',
 idCategoria='{$idCategoria}' 
 where idFilme = '{$idFilme}'
 ";
-
 $rs = mysqli_query($conexao,$sql);
-
 echo "<p>Registro atualizado com sucesso!</p>";
-
-
 ?>

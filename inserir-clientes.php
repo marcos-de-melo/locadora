@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Inserir Cliente</h2>
 <?php
 $nomeCliente = $_POST["nomeCliente"];
@@ -24,3 +25,4 @@ $sql = "INSERT INTO tbClientes (
         echo "<p>Erro ao inserir</p>";
     }
 ?>
+</div>

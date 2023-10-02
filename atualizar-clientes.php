@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Atualizar Cliente</h2>
 <?php
 $idCliente = $_POST["idCliente"];
@@ -20,3 +21,4 @@ echo "<p>Registro atualizado com sucesso!</p>";
 
 
 ?>
+</div>
